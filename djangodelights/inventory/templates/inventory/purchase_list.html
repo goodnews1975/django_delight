@@ -1,0 +1,18 @@
+{% extends "./base.html" %}
+
+{% block content %}
+<h2>Purchase List</h2>
+<table id="owners">
+  <tr>
+    <th>Menu Item</th>
+    <th>Timestamp</th>
+     </tr>
+	<tr>
+  {% for purchase in purchase_list %}
+  </tr>
+  <tr>
+    <td>{{ purchase.menuitem }}</td>
+    <td>{{ purchase.timestamp }}</td>
+{% endfor %}
+{% endblock %}</tr>
+  </table>

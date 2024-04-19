@@ -1,0 +1,10 @@
+<head>
+</head>
+<body>
+<a href="{% url 'ingredient-list' %}" > Ingredient List </a>
+<a href="{% url 'menu-list' %}" > Menu List </a>
+<a href="{% url 'purchase-list' %}" > Purchase List </a>
+<h3>Welcome to Django delights {{ name }}!</h3>
+    {% block content %}
+    {% endblock %}
+</body>
